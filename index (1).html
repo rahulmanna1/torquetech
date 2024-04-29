@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head>
+      <meta charset="utf-8">
+    <title>GG-host</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .close-button {
+            position: fixed;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+
+<meta charset="utf-8"><style>
+    body {
+        background: #000000;
+        color: #FFFFFF;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .button {
+        font-size: 48px;
+        background-color: #1bd121;
+        padding: 10px 200px;
+        border-radius: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+</style></head>
+
+
+
+<body>
+
+    <div class="close-button top-left" onclick="closePage()">X</div>
+
+    <!-- Close button at top right -->
+    <div class="close-button top-right" onclick="closePage()">X</div>
+
+
+    <div class="middle">
+        <h1>Click below to continue.</h1>
+
+        <button type="submit" class="button" onclick="SameTab()"><span>Continue</span></button>
+    </div>
+    <script>
+        function SameTab() {
+            window.location.replace(
+                "https://lab.lyfpoints.com/kPsQz8KX");
+        }
+    </script>
+
+</body></html>
